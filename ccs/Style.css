@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey;
+}
+header{
+    background-position: center;
+    background-color: white;
+    text-align: left;
+}
+
+nav{
+    display: flex;
+    color: orange;
+    flex-direction: row;
+    font-style: oblique;
+    text-wrap: wrap;
+    background-color: darkslategrey;
+    flex-wrap: wrap;
+}
+nav a{
+    padding: .9375rem 1.55rem;
+    display: flex;
+    color: orange;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px;
+    border-style: groove;
+}
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar li{
+    margin: 0 .625rem
+}
+section h1{
+text-align: center;
+font-style: inherit;
+font-size: xx-large;
+color: crimson;
+}
+.section{
+    display: grid;
+    width: 100%;
+    height: 25rem;
+  grid-template-columns: 1fr 2fr 1fr; 
+  grid-template-rows: 6.25rem 12.5rem;
+  background-image: url(nube.png);
+  background-position: center;
+}
+.item2{
+    color: crimson;
+    text-align: justify;
+    
+}
+.item3{
+    color: crimson;
+    text-align: justify;
+}
+
+.text{
+    color:white;
+}
+footer{
+    text-align: center;
+    color: orange;
+    background-color: darkslategrey;
+    text-decoration: double;
+   width: 100%;
+   height: 100px;
+   position:relative;
+}
+@media screen and (max-width: 780px){
+    main{
+        align-items: center;
+    }
+  
+    header {
+      text-align: center;
+    }
+    nav {
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+    nav a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: .625rem; 
+  }
+
+   .section {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem; 
+    overflow: hidden;
+    
+  }
+  .imagen{
+    width: max-content;
+    align-items: center;
+    position: center;
+    overflow: hidden;
+  }
+  
+  }
+  @media screen and (max-width:412px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
